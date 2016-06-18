@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ _('Articles') }}</h1>
+    {% for item in article_list %}
+        <div>{{ item.title }}</div>
+        <div>{{ item.content }}</div>
+        <hr>
+    {% endfor %}
+    <hr>
+    <h1>{{ _('Authors') }}</h1>
+    {% for item in author_list %}
+        <div>{{ item.first_name }}</div>
+        <div>{{ item.last_name }}</div>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
